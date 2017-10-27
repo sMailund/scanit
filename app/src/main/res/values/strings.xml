@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Scanit</string>
+    <string name="title_activity_garment_info">GarmentInfo</string>
+    <string name="made_in">Made in: </string>
+    <string name="work_conditions">Work conditions: </string>
+    <string name="materials">Materials:</string>
+    <string name="co2_emissions">CO2 emissions:</string>
+</resources>

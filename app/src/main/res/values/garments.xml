@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="garment1">
+        <item>Austria</item>
+        <item>Good</item>
+        <item>Nylon, Hemp, Cotton</item>
+        <item>6</item>
+        <item>70</item>
+    </string-array>
+    <string-array name="garment2">
+        <item>China</item>
+        <item>Good</item>
+        <item>Wool</item>
+        <item>3</item>
+        <item>90</item>
+    </string-array>
+    <string-array name="garment3">
+        <item>China</item>
+        <item>Bad</item>
+        <item>Cotton blend</item>
+        <item>5</item>
+        <item>49</item>
+    </string-array>
+</resources>
