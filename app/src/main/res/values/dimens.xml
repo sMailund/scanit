@@ -8,4 +8,5 @@
     <dimen name="infoItemPaddingRight">10dp</dimen>
     <dimen name="space">4dp</dimen>
     <dimen name="infoItemTextSize">22sp</dimen>
+    <dimen name="infoItemIconPadding">3dp</dimen>
 </resources>
