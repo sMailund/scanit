@@ -15,11 +15,6 @@ import java.util.Arrays;
 
 public class GarmentInfo extends AppCompatActivity {
 
-    private final String GOOD_WORKCONDITIONS = "Good";
-    private final String[] GOOD_MATERIALS = {"Modal", "Hemp", "Bamboo", "Cotton"};
-    private final int GOOD_EMISSION_THRESHOLD = 3;
-    private final int GOOD_SUSTAINOMETER_THRESHOLD = 50;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +61,7 @@ public class GarmentInfo extends AppCompatActivity {
      */
     private void setConditionsColor(String conditions) {
         TextView tv_conditions = (TextView) findViewById(R.id.result_workconditions);
-        if (conditions.equals(GOOD_WORKCONDITIONS)) {
+        if (conditions.equals(GarmentRatingStandards.GOOD_WORKCONDITIONS)) {
             setGreen(tv_conditions);
         } else {
             setRed(tv_conditions);
@@ -95,11 +90,11 @@ public class GarmentInfo extends AppCompatActivity {
     @NonNull
     private TextView createMaterialsTextView(String material) {
         TextView tv_material = new TextView(this);
-        tv_material.setText(material);
+        tv_material.setText(StringUtils.capitalize(material));
         tv_material.setTextSize(TypedValue.COMPLEX_UNIT_PX,
                 getResources().getDimension(R.dimen.infoItemTextSize));
 
-        if (Arrays.asList(GOOD_MATERIALS).contains(material)) {
+        if (Arrays.asList(GarmentRatingStandards.GOOD_MATERIALS).contains(material)) {
             setGreen(tv_material);
         } else {
             setRed(tv_material);
@@ -114,7 +109,7 @@ public class GarmentInfo extends AppCompatActivity {
      */
     private void setCO2Color(int emissionScore) {
         TextView tv_emissions = (TextView) findViewById(R.id.result_CO2);
-        if (emissionScore <= GOOD_EMISSION_THRESHOLD) {
+        if (emissionScore <= GarmentRatingStandards.GOOD_EMISSION_THRESHOLD) {
             setGreen(tv_emissions);
         } else {
             setRed(tv_emissions);
@@ -126,7 +121,7 @@ public class GarmentInfo extends AppCompatActivity {
      * @param sustainoscore the score on the sustainometer for garment being checked
      */
     private void setSusmeterColor(int sustainoscore) {
-        if (sustainoscore < GOOD_SUSTAINOMETER_THRESHOLD) {
+        if (sustainoscore < GarmentRatingStandards.GOOD_SUSTAINOMETER_THRESHOLD) {
             View susmterCircleRed = findViewById(R.id.sustainometerCircleRed);
             susmterCircleRed.setVisibility(View.VISIBLE);
         }
