@@ -21,4 +21,60 @@
         <item>5</item>
         <item>49</item>
     </string-array>
+    <string-array name="garment4">
+        <item>china</item>
+        <item>good</item>
+        <item>cotton, nylon, polyester</item>
+        <item>7</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="garment5">
+        <item>china</item>
+        <item>poor</item>
+        <item>cotton, elastan</item>
+        <item>5</item>
+        <item>45</item>
+    </string-array>
+    <string-array name="garment6">
+        <item>turkey</item>
+        <item>good</item>
+        <item>rayon</item>
+        <item>2</item>
+        <item>80</item>
+    </string-array>
+    <string-array name="garment7">
+        <item>china</item>
+        <item>poor</item>
+        <item>polyester, elastan</item>
+        <item>4</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="garment8">
+        <item>china</item>
+        <item>poor</item>
+        <item>cotton</item>
+        <item>3</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="garment9">
+        <item>china</item>
+        <item>poor</item>
+        <item>silk</item>
+        <item>2</item>
+        <item>80</item>
+    </string-array>
+    <string-array name="garment10">
+        <item>vietnam</item>
+        <item>poor</item>
+        <item>rayon</item>
+        <item>5</item>
+        <item>65</item>
+    </string-array>
+    <string-array name="garment11">
+        <item>italy</item>
+        <item>good</item>
+        <item>wool</item>
+        <item>2</item>
+        <item>95</item>
+    </string-array>
 </resources>
