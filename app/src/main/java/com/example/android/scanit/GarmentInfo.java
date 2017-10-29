@@ -1,11 +1,8 @@
 package com.example.android.scanit;
 
-import android.annotation.SuppressLint;
 import android.support.annotation.NonNull;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Layout;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -49,9 +46,9 @@ public class GarmentInfo extends AppCompatActivity {
         setCO2Color(Integer.parseInt(co2));
         setSusmeterColor(Integer.parseInt(sustainometer));
 
-        tv_madein.setText(madein);
-        tv_conditions.setText(conditions);
-        tv_co2.setText(co2);
+        tv_madein.setText(StringUtils.capitalize(madein));
+        tv_conditions.setText(StringUtils.capitalize(conditions));
+        tv_co2.setText(co2 + "/10");
         tv_sustainometer.setText(sustainometer + "%");
     }
 
